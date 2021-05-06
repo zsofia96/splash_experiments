@@ -4,7 +4,7 @@ from scrapy_splash import SplashRequest
 class Baowu2Spider(scrapy.Spider):
     name = 'baowu2'
     allowed_domains = ['baowugroup.com']
-    start_urls = ['http://www.baowugroup.com/en/#/aboutus/291/327']
+    # start_urls = ['http://www.baowugroup.com/en/#/aboutus/291/327']
 
     def start_requests(self):
         for url in self.start_urls:

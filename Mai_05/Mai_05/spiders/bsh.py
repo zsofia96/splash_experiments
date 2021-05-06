@@ -10,7 +10,7 @@ class BshSpider(scrapy.Spider):
             assert(splash:go(args.url))
             assert(splash:wait(30))
             assert(splash:runjs("document.getElementsByClassName('btn btn-primary js_accept-cookies')[0].click()"))
-            assert(splash:wait(10))
+            assert(splash:wait(30))
             return splash:html()
         end
     '''
